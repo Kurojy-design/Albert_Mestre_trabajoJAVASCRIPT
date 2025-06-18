@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const imagenes = [
-        {src: "../img/galeria1.png", alt: "Desarrollo Web"}, 
-        {src: "../img/galeria2.png", alt: "Aplicaciones móviles"},
-        {src: "../img/galeria3.png", alt: "Consultoría UX/UI"},
-        {src: "../img/galeria4.png", alt: "Hosting web"},
-        {src: "../img/galeria5.png", alt: "Seguridad web (SSL)"},
-        {src: "../img/galeria6.png", alt: "Mantenimiento técnico"}
+        {src: "../img/imagen1.png", alt: "Desarrollo Web"}, 
+        {src: "../img/imagen2.png", alt: "Aplicaciones móviles"},
+        {src: "../img/imagen3.png", alt: "Consultoría UX/UI"},
+        {src: "../img/imagen4.png", alt: "Hosting web"},
+        {src: "../img/imagen5.png", alt: "Seguridad web (SSL)"},
+        {src: "../img/imagen6.png", alt: "Mantenimiento técnico"}
 
     ];
     
