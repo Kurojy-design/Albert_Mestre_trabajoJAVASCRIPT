@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset = "UTF-8" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0"/>
+    <title>Presupuesto</title>
+    <link rel="stylesheet" href="../css/estilos.css"/>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo">NovaCore</div>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="presupuesto.html" class="activo">Presupuesto</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Formulario de presupuesto</h1>
+
+        <!-- Mensaje de éxito -->
+        <p id="mensaje-exito" style ="display: none; color:green; font-weight: bold;">
+            Gracias por confiar en NovaCore. Tu solicitud ha sido enviada correctamente. Nos pondremos en contacto contigo en breve.
+        </p>
+
+        <form id="form-presupuesto">
+            <!--Datos de contacto-->
+            <fieldset>
+                <legend>Datos de Contacto</legend>
+                <label> Nombre:
+                    <input type="text" id="nombre" maxlength="15" required />
+                </label>
+                <label> Apellidos:
+                    <input type="text" id="apellidos" maxlength="40" required />
+                </label>
+                <label> Teléfono:
+                    <input type="text" id="telefono" maxlength="9" required />
+                </label>
+                <label> Email:
+                    <input type="email" id="email" required />
+                </label>
+            </fieldset>
+
+            <!-- Opciones de presupuesto -->
+            <fieldset>
+                <legend>Opciones de Presupuesto</legend>
+                <label>Producto:
+                    <select id="producto">
+                        <option value="web" data-precio="800">Sitio Web Corporativo - 800€</option>
+                        <option value="app" data-precio="1500">Aplicación Multiplataforma - 1500€</option>
+                        <option value="seo" data-precio="600">Consultoría UX/UI - 600€</option>
+                    </select>
+                </label>
+                <label>Plazo de entrega:
+                    <input type="number" id="plazo" min="1" max="365" value="30" />
+                    <small> (Plazos largos obtienen hasta un 20% de descuento)</small>
+                </label>
+
+                <fieldset>
+                    <legend>Extras</legend>
+                    <label><input type="checkbox" class="extra" value="120"/> Hosting (+120€)</label>
+                    <label><input type="checkbox" class="extra" value="90"/>Dominio personalizado(90€)</label>
+                    <label><input type="checkbox" class="extra" value="180"/>Mantenimiento mensual(180€)</label>
+                </fieldset>
+
+                <label>Presupuesto final:
+                    <input type="text" id="presupuesto" readonly />
+                </label>
+            </fieldset>
+            <!--Condiciones y envío-->
+            <label>
+                <input type="checkbox" id="condiciones" required /> Acepto las condiciones de privacidad
+            </label>
+            <div>
+                <button type="submit">Enviar</button>
+                <button type="reset">Resetear</button>
+            </div>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="redes">
+            <img src="img/facebook.png" alt="Facebook"/>
+            <img src="img/twitter.png" alt="Twitter"/>
+            <img src="img/instagram.png" alt="Instagram"/>
+        </div>
+        <p> 2025 NovaCore - Dirección: Calle Innovación 42 - <a href="#">Aviso Legal</a></p>
+    </footer>
+
+    <script src="js/presupuesto.js"></script>
+</body>
+</html>

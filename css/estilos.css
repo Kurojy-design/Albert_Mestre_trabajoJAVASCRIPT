@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+}
+
+header{
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.navbar a {
+    color: #1d1d1f;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.navbar .activo {
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
+section, main {
+    padding: 40px 30px;
+    
+}
+
+h1, h2{
+    font-weight: 600;
+    color: #000;
+}
+
+button, input[type="submit"] {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #005bb5;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer .redes img{
+    width: 24px;
+    margin: 0 5px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.galeria a {
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.galeria a:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.galeria img:hover{
+    transform: scale(1.05);
+}
+
+.galeria-item img{
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galeria-item img:hover{
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #fff;
+}
+
+.cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
