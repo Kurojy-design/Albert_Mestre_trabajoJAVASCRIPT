@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mapa = L.map("mapa").setView(empresaCoords, 13);
 
     // Capa Base
-    L.titleLayer("https://{s}.title.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.titleLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: 'OpenStreetMap contributors'
     }).addTo(mapa);
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .openPopup();
 
     // Intentar obtener ubicación del cliente
-    if(navegador.geolocation) {
+    if(navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
             function (pos) {
                 const clienteCoords = [pos.coords.latitude, pos.coords.longitude];
