@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mapa = L.map("mapa").setView(empresaCoords, 13);
 
     // Capa Base
-    L.titleLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
         attribution: 'OpenStreetMap contributors'
     }).addTo(mapa);
 
